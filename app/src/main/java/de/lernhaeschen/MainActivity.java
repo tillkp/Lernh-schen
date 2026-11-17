@@ -36,9 +36,49 @@ public class MainActivity extends Activity {
  btn("Lernen starten",()->{queue.clear();String selected=(String)spinner.getSelectedItem();for(String[] w:words)if(isLang(w,l)&&(selected.equals("Alle Lektionen")||w[0].equals(selected)))queue.add(w);Collections.shuffle(queue);pos=0;answered=correct=0;sessionStart=System.currentTimeMillis();card();});btn("Zurück",this::home);}
  void card(){time();if(queue.isEmpty()){home();return;}if(pos>=queue.size())pos=0;active=queue.get(pos);reverse=rnd.nextBoolean();page("🐰 Vokabel "+(pos+1)+" / "+queue.size());label("Richtig: "+correct+" / "+answered,15);label(reverse?active[2]:active[1],26);if(!reverse&&lang.equals("Französisch"))btn("🔊 Anhören",()->{if(tts!=null)tts.speak(active[1],TextToSpeech.QUEUE_FLUSH,null,"word");});
  EditText input=new EditText(this);input.setHint(reverse?"Französisch eingeben":"Deutsch eingeben");root.addView(input);btn("Antwort prüfen",()->check(input.getText().toString()));btn("Lernen beenden",this::home);}
- String norm(String s){return java.text.Normalizer.normalize(s.toLowerCase(Locale.ROOT).trim(),java.text.Normalizer.Form.NFD).replaceAll("\\p{M}","").replaceAll("[!?.'’]","").replaceAll("\\s+"," ");}
- void check(String answer){if(answer.trim().isEmpty())return;String expected=reverse?active[1]:active[2];boolean ok=false;for(String x:expected.split(";| / "))if(norm(x).equals(norm(answer)))ok=true;answered++;if(ok){correct++;prefs.edit().putInt("hearts",prefs.getInt("hearts",0)+2).putInt("coins",prefs.getInt("coins",0)+1).apply();}else queue.add(active);
- page(ok?"🌟 Richtig!":"🌷 Noch nicht ganz");label("Richtige Antwort: "+expected,21);label("Deine Antwort: "+answer,17);label(ok?"2 Herzen und 1 Münze für dein Häschen!":"Diese Vokabel kommt später noch mal.",17);btn("Weiter",()->{pos++;card();});btn("Beenden",this::home);}
+ String norm(String s){
+  return java.text.Normalizer.normalize(s.toLowerCase(Locale.ROOT).trim(),java.text.Normalizer.Form.NFD)
+    .replaceAll("\\p{M}","").replace("ß","ss")
+    .replaceAll("[.!?]","").replaceAll("[’']","")
+    .replaceAll("\\s*/\\s*","/").replaceAll("\\s*-\\s*","")
+    .replaceAll("\\s+"," ").trim();
+ }
+ String germanEquivalent(String s){
+  String n=norm(s).replaceFirst("^(ein|eine|einen|einem|einer|eines|der|die|das|den|dem|des)\\s+","");
+  if(n.equals("opa")||n.equals("grossvater")||n.equals("grosspapa"))return "opa";
+  if(n.equals("oma")||n.equals("grossmutter")||n.equals("grossmama"))return "oma";
+  if(n.equals("mama")||n.equals("mutti")||n.equals("mutter"))return "mama";
+  if(n.equals("papa")||n.equals("vati")||n.equals("vater"))return "papa";
+  if(n.equals("fussball")||n.equals("fussballspielen"))return "fussball";
+  return n;
+ }
+ boolean validAnswer(String expected,String answer,boolean french){
+  String actual=norm(answer);
+  if(actual.equals(norm(expected)))return true;
+  for(String option:expected.split("[;/]")){
+    String o=norm(option);
+    if(o.equals(actual))return true;
+    if(!french&&germanEquivalent(option).equals(germanEquivalent(answer)))return true;
+  }
+  return !french&&germanEquivalent(expected).equals(germanEquivalent(answer));
+ }
+ void check(String answer){
+  if(answer.trim().isEmpty())return;
+  String expected=reverse?active[1]:active[2];
+  boolean isFrench=reverse&&lang.equals("Französisch");
+  boolean ok=validAnswer(expected,answer,isFrench);
+  answered++;
+  if(ok){correct++;prefs.edit().putInt("hearts",prefs.getInt("hearts",0)+2).putInt("coins",prefs.getInt("coins",0)+1).apply();}
+  else queue.add(active);
+  page(ok?"🌟 Richtig!":"🌷 Noch nicht ganz");
+  label("Richtige Antwort: "+expected,21);
+  label("Deine Antwort: "+answer,17);
+  if(ok&&isFrench&&!expected.equalsIgnoreCase(answer.trim()))
+    label("Merke dir auch die Schreibweise mit Artikeln, Bindestrichen und Akzenten.",15);
+  label(ok?"2 Herzen und 1 Münze für dein Häschen!":"Diese Vokabel kommt später noch mal.",17);
+  btn("Weiter",()->{pos++;card();});
+  btn("Beenden",this::home);
+ }
  void buddy(){page("🐰 Mein Häschen");label("  (\\_/)\n  ( •ᴗ• ) ♥\n  / >🌷",29);label("💗 "+prefs.getInt("hearts",0)+" Herzen · 🪙 "+prefs.getInt("coins",0)+" Münzen",18);label("Dein Häschen bleibt immer glücklich, auch in Lernpausen.",16);
  String[] items={"🎀 Rosa Schleife","🌷 Blumentopf","⭐ Sternenlampe","☁️ Wolkenkissen"};int[] prices={10,20,25,30};for(int i=0;i<items.length;i++){final int index=i;boolean owned=prefs.getString("items","").contains(","+i+",");btn((owned?"✓ ":"🪙 "+prices[i]+" ")+items[i],()->{if(prefs.getString("items","").contains(","+index+","))return;int coins=prefs.getInt("coins",0);if(coins<prices[index]){Toast.makeText(this,"Noch nicht genug Münzen",Toast.LENGTH_SHORT).show();return;}prefs.edit().putInt("coins",coins-prices[index]).putString("items",prefs.getString("items","")+","+index+",").apply();buddy();});}btn("Zurück",this::home);}
  void photo(){Intent i=new Intent(Intent.ACTION_GET_CONTENT);i.setType("image/*");startActivityForResult(Intent.createChooser(i,"Vokabelseite auswählen"),PHOTO);}
