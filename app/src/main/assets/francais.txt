@@ -1,0 +1,170 @@
+Au début|Bienvenue !|Willkommen!
+Au début|Bonjour !|Guten Tag!
+Au début|Je m'appelle ...|Ich heiße ...
+Au début|moi|ich (betont)
+Au début|c'est|das ist
+Au début|Salut !|Hallo!; Grüß dich!; Tschüs!
+Au début|et|und
+Au début|toi|du (betont)
+Au début|comment|wie (Frage)
+Au début|Tu t'appelles comment ?|Wie heißt du?
+Au début|Ça va ?|Wie geht's?
+Au début|un bisou|ein Küsschen
+Au début|merci|danke
+Au début|À bientôt !|Bis bald!
+Au début|oui|ja
+Au début|à plus|Bis später!
+Au début|bien|gut
+Au début|Ça va bien.|Es geht (mir) gut.
+Au début|Au revoir !|Auf Wiedersehen!
+Au début|voilà|da ist; da sind
+Unité 1|Paris|Hauptstadt Frankreichs
+Unité 1|la tour Eiffel|der Eiffelturm
+Unité 1|une place|ein Platz
+Unité 1|un parc|ein Park
+Unité 1|une station|eine Station; eine Haltestelle
+Unité 1|le métro|die Metro; die U-Bahn
+Unité 1|une rue|eine Straße
+Unité 1|un café|ein Café
+Unité 1|un quartier|ein Stadtviertel
+Unité 1|cool|cool
+Unité 1|Où est ... ?|Wo ist ...?
+Unité 1|on est|man ist; wir sind
+Unité 1|là|da; dort
+Unité 1|maman|Mama; Mutti
+Unité 1|madame|Frau
+Unité 1|Attention !|Achtung!; Vorsicht!
+Unité 1|Pardon !|Verzeihung!; Entschuldigung!
+Unité 1|je suis|ich bin
+Unité 1|un ami / une amie|ein Freund / eine Freundin
+Unité 1|de / d'|aus; von
+Unité 1|un voisin / une voisine|ein Nachbar / eine Nachbarin
+Unité 1|tu es|du bist
+Unité 1|un chat|eine Katze
+Unité 1|il est|er ist
+Unité 1|sympa|nett; toll
+Unité 1|on fait un tour|wir drehen eine Runde
+Unité 1|Viens !|Komm!
+Unité 1|d'accord|einverstanden; o.k.
+Unité 1|papa|Papa
+Unité 1|Regarde !|Schau!; Sieh mal!
+Unité 1|ici|hier; hierher
+Unité 1|non|nein
+Unité 1|une question|eine Frage
+Unité 1|une chanson|ein Lied
+Unité 1|une fille|ein Mädchen; eine Tochter
+Unité 1|un copain / une copine|ein Freund / eine Freundin
+Unité 1|une dame|eine Dame; eine Frau
+Unité 1|un monsieur|ein Herr; ein Mann
+Unité 1|un garçon|ein Junge
+Unité 1|Allez !|Los!
+Unité 1|il|er
+Unité 1|elle|sie
+Unité 2|une activité|eine Freizeitbeschäftigung; eine Aktivität
+Unité 2|aimer|lieben; mögen
+Unité 2|le sport|der Sport
+Unité 2|la danse|der Tanz; das Tanzen
+Unité 2|une chanson|ein Lied
+Unité 2|adorer|sehr gern mögen
+Unité 2|un jeu vidéo / des jeux vidéo|ein Computerspiel / Computerspiele
+Unité 2|détester|verabscheuen; überhaupt nicht mögen
+Unité 2|la natation|das Schwimmen
+Unité 2|C'est nul !|Das ist blöd!
+Unité 2|un livre|ein Buch
+Unité 2|le théâtre|das Theater
+Unité 2|le ping-pong|das Tischtennis
+Unité 2|la musique|die Musik
+Unité 2|l'escalade|das Klettern
+Unité 2|le foot|der Fußball
+Unité 2|chez|bei
+Unité 2|écouter|zuhören; anhören
+Unité 2|entrer|eintreten; hereinkommen
+Unité 2|le silence|die Ruhe; die Stille
+Unité 2|s'il te plaît|bitte (zu einer Person)
+Unité 2|s'il vous plaît|bitte (höflich/mehrere Personen)
+Unité 2|travailler|arbeiten
+Unité 2|danser|tanzen
+Unité 2|en silence|still; ohne Lärm
+Unité 2|un casque|ein Kopfhörer
+Unité 2|tard|spät
+Unité 2|plus tard|später
+Unité 2|une chambre|ein Zimmer; ein Schlafzimmer
+Unité 2|jouer|spielen
+Unité 2|regarder|ansehen; betrachten
+Unité 2|un match|ein Spiel; ein Wettkampf
+Unité 2|Ah, bon ?|Ach ja?; Wirklich?
+Unité 2|ensemble|gemeinsam; zusammen
+Unité 2|un but|ein Ziel; ein Tor
+Unité 2|chanter|singen
+Unité 2|chercher|suchen
+Unité 2|trouver|finden
+Unité 2|parler|sprechen
+Unité 2|ou|oder
+Unité 2|le rock|die Rockmusik
+Unité 2|le rap|der Rap
+Unité 2|la pop|der Pop
+Unité 2|le hip-hop|der Hip-Hop
+Unité 2|l'électro|die Elektro-Musik
+Unité 2|la musique classique|die klassische Musik
+Unité 2|Qu'est-ce que ... ?|Was ...?
+Unité 2|il y a|es gibt; es ist; es sind
+Unité 2|Qu'est-ce qu'il y a ?|Was gibt es?
+Unité 2|un collège|ein Collège
+Unité 2|au collège|im Collège
+Unité 2|une cour|ein (Schul-)Hof
+Unité 2|un élève / une élève|ein Schüler / eine Schülerin
+Unité 2|un ballon|ein Ball
+Unité 2|là-bas|dort; da drüben
+Unité 2|encore|noch
+Unité 2|une table|ein Tisch
+Unité 2|une affiche|ein Plakat; ein Poster
+Unité 2|un stylo|ein Füller; ein Kuli
+Unité 2|un sac|eine Tasche
+Unité 2|un cahier|ein Heft
+Unité 2|retrouver|wiedertreffen; wiederfinden
+Unité 2|autre|anderer; andere; anderes
+Unité 2|une idée|eine Idee; ein Gedanke
+Unité 2|comme|wie; als
+Unité 2|Je ne sais pas.|Ich weiß (es) nicht.
+Unité 2|arriver|ankommen
+Unité 2|un professeur / une professeure|ein Lehrer / eine Lehrerin
+Unité 2|un club|ein Klub; eine AG
+Unité 2|une scène|eine Szene; eine Bühne
+Unité 2|préparer|vorbereiten
+Unité 2|une pièce de théâtre|ein Theaterstück
+Unité 2|une BD|ein Comic
+Unité 2|Qu'est-ce que tu fais ?|Was machst du?
+Unité 2|désolé / désolée|es tut mir leid
+Unité 2|trop|zu viel; zu sehr
+Unité 2|trop tard|zu spät
+Unité 2|Que fait ... ?|Was macht ...?
+Unité 2|Pourquoi pas ?|Warum nicht?
+Unité 3|un anniversaire|ein Geburtstag
+Unité 3|le dix novembre|am zehnten November
+Unité 3|une fête|ein Fest
+Unité 3|Joyeux anniversaire !|Alles Gute zum Geburtstag!
+Unité 3|un gâteau / des gâteaux|ein Kuchen / Kuchen
+Unité 3|une bougie|eine Kerze
+Unité 3|un cadeau / des cadeaux|ein Geschenk / Geschenke
+Unité 3|une famille|eine Familie
+Unité 3|aujourd'hui|heute
+Unité 3|mon / ma / mes|mein; meine
+Unité 3|des grands-parents|Großeltern
+Unité 3|habiter|wohnen
+Unité 3|une mère|eine Mutter
+Unité 3|un père|ein Vater
+Unité 3|une belle-mère|eine Stiefmutter
+Unité 3|un beau-père|ein Stiefvater
+Unité 3|il s'appelle / elle s'appelle|er heißt / sie heißt
+Unité 3|un enfant|ein Kind
+Unité 3|bien sûr|sicherlich; na klar!
+Unité 3|un grand-père|ein Großvater
+Unité 3|une grand-mère|eine Großmutter
+Unité 3|les parents|die Eltern
+Unité 3|un fils|ein Sohn
+Unité 3|un frère|ein Bruder
+Unité 3|une sœur|eine Schwester
+Unité 3|un jour|ein Tag
+Unité 3|une gare|ein Bahnhof
+Unité 3|un train|ein Zug
+Unité 3|sur|auf; über
